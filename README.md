@@ -13,3 +13,9 @@ The manufacturers are typically small "Mom and Pop" operations. They do not upda
 When discovered as discontinued, a person from the Designer Inc team searches the available pieces for replacement recommendations.
 
 My goal is to present a recommender system to identify X possible replacements for the Designer to select from or search.
+
+If this is successful, then it's performance can be improved and used on the site.
+
+Secondary need: pieces are not defined by a style. If I can categorize pieces by style, then there can be a new element used for search and recommender criterion.
+
+Styles can then be associated with nearest styles for an improvement in search and recommendations.
