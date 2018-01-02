@@ -1,6 +1,15 @@
-# designerinc
-Recommender System for Designer Inc
+# Designer Inc Recommender System
 
 Designer Inc (designerinc.com) is a trade-only sourcing and purchasing site listing hundreds of thousands of furniture and other interior design pieces. "Trade-only" refers to the special relationship between professional designers and manufacturers.
 
 Designer Inc launched in August 2017.
+
+Currently designers can search the available 250k+ pieces using type, brand, dimensions, size, and color.
+
+# Need
+
+The manufacturers are typically small "Mom and Pop" operations. They do not update availability or discontinuation of any piece. This is discovered during a back-end pricing or final purchase order request. Before this site, Designers would discover this by working with sourcing experts or directly with the manufacturers themselves. This system is already a simplification for them.
+
+When discovered as discontinued, a person from the Designer Inc team searches the available pieces for replacement recommendations.
+
+My goal is to present a recommender system to identify X possible replacements for the Designer to select from or search.
