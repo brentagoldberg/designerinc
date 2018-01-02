@@ -19,3 +19,5 @@ If this is successful, then it's performance can be improved and used on the sit
 Secondary need: pieces are not defined by a style. If I can categorize pieces by style, then there can be a new element used for search and recommender criterion.
 
 Styles can then be associated with nearest styles for an improvement in search and recommendations.
+
+Long term need: a better ordering of pieces on initial search. If the initial recommender can have quick enough performance, then Designers will get to their selections quicker.
