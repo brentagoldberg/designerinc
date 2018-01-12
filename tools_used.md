@@ -1,8 +1,17 @@
-Tools used:
+## Languages used:
+
 Python (2 and 3)
+
 Jupyter Notebook
+
 NoSQL, Postgres, plpdsql
-MongoDB, pymongo, pandas, time, algoliasearch
+
+## libraries used:
+
+pymongo, pandas, numpy, json, psycopg2, time, algoliasearch, matplotlib
+
+## Web sites and services used:
+
 algolia, heap, google analytics, AWS
 
 
