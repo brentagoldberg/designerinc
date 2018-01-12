@@ -15,6 +15,7 @@ def pipeline(df):
     df = transform(df)
     df = dummies(df)
     df = pick_dims(df)
+    return df
     
 def materials_dummy(df):
     for i in materials:
@@ -33,6 +34,7 @@ def materials_dummy(df):
         for i in materials:
             if i in texts:
                 df[idx][i] = 1
+    return df
 
 def pick_dims(df):
     
@@ -42,7 +44,8 @@ def pick_dims(df):
     
     
     
-
+if __name__ == '__main__':
+    pipeline(df)
     
     
     
