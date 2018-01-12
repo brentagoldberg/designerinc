@@ -4,7 +4,7 @@ Designer Inc (designerinc.com) is a trade-only sourcing and purchasing site list
 
 Designer Inc launched in August 2017.
 
-Currently designers can search the available 250k+ pieces using type, brand, dimensions, size, and color.
+Currently designers can search the available 218k+ pieces using type, brand, dimensions, size, and color. They have 404k+ pieces in their database.
 
 # Need
 
