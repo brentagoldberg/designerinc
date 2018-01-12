@@ -15,6 +15,14 @@ pymongo, pandas, numpy, json, psycopg2, time, algoliasearch, matplotlib
 algolia, heap, google analytics, AWS
 
 
-Skills used:
+## Skills used:
+
+# **Data Science!**
+
+Business Consulting
+
+EDA
+
+Feature engineering
 
 web scraping
