@@ -17,9 +17,9 @@ algolia, heap, google analytics, AWS
 
 ## Skills used:
 
-# **Data Science!**
+### **Data Science!**
 
-Business Consulting
+Business Consulting / Interviewing
 
 EDA
 
