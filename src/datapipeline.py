@@ -37,6 +37,7 @@ def materials_dummy(df):
     return df
 
 def pick_dims(df):
+    dims = 
     
     
     

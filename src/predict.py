@@ -13,12 +13,12 @@ def predict(item):
 
     item = item.rename(index=str, columns={"product_id": "_id"}).to_dict('records')[0]
 
-    return new_data['prediction'], new_data['_id']
+    return item['prediction'], item['_id']
 
     client = MongoClient()
     db = client.results
     collection = db.test_collection
-    collection.insert(new_data)
+    collection.insert(item)
     print(collection.find_one(_id))
 
 if __name__ == '__main__':
