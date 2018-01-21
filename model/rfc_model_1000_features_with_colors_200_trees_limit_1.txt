@@ -1,0 +1,136 @@
+Mid-Century_style
+[[8383  101]
+ [ 654 1381]]
+tn:  8383 fp:  101 fn:  654 tp:  1381
+Precision is:  0.931848852901
+Recall is:  0.678624078624
+Accuracy is:  0.928225116456
+
+Rustic_style
+[[7714  145]
+ [ 868 1792]]
+tn:  7714 fp:  145 fn:  868 tp:  1792
+Precision is:  0.925141972122
+Recall is:  0.673684210526
+Accuracy is:  0.903698070159
+
+ArtsandCrafts_style
+[[9008   47]
+ [ 377 1087]]
+tn:  9008 fp:  47 fn:  377 tp:  1087
+Precision is:  0.958553791887
+Recall is:  0.742486338798
+Accuracy is:  0.95969198593
+
+Geometric_style too small
+
+Rococo_style too small
+
+FolkArt_style too small
+
+Regency_style
+[[9804   23]
+ [ 359  333]]
+tn:  9804 fp:  23 fn:  359 tp:  333
+Precision is:  0.935393258427
+Recall is:  0.481213872832
+Accuracy is:  0.963684760909
+
+Neoclassical_style too small
+
+Stripe_style too small
+
+Floral_style too small
+
+Country_style too small
+
+Transitional_style
+[[3884  920]
+ [ 322 5393]]
+tn:  3884 fp:  920 fn:  322 tp:  5393
+Precision is:  0.854268968795
+Recall is:  0.94365704287
+Accuracy is:  0.881927939918
+
+Solid_style too small
+
+Tribal_style too small
+
+Traditional_style
+[[5208  649]
+ [ 541 4121]]
+tn:  5208 fp:  649 fn:  541 tp:  4121
+Precision is:  0.86394129979
+Recall is:  0.883955383955
+Accuracy is:  0.886871375606
+
+Victorian_style too small
+
+ArtNouveau_style too small
+
+HollywoodRegency_style
+[[9863   12]
+ [ 338  306]]
+tn:  9863 fp:  12 fn:  338 tp:  306
+Precision is:  0.962264150943
+Recall is:  0.475155279503
+Accuracy is:  0.966726875178
+
+Baroque_style too small
+
+Woven_style too small
+
+Prints_style too small
+
+Industrial_style
+[[7451  183]
+ [ 510 2375]]
+tn:  7451 fp:  183 fn:  510 tp:  2375
+Precision is:  0.928459734167
+Recall is:  0.823223570191
+Accuracy is:  0.934119212853
+
+Classic_style too small
+
+Abstract_style too small
+
+Modern_style
+[[6547  253]
+ [ 555 3164]]
+tn:  6547 fp:  253 fn:  555 tp:  3164
+Precision is:  0.925958443079
+Recall is:  0.850766335036
+Accuracy is:  0.923186614697
+
+Contemporary_style
+[[1972  954]
+ [ 220 7373]]
+tn:  1972 fp:  954 fn:  220 tp:  7373
+Precision is:  0.885432929026
+Recall is:  0.971025944949
+Accuracy is:  0.888392432741
+
+Gothic_style too small
+
+Asian_style
+[[8824   48]
+ [ 391 1256]]
+tn:  8824 fp:  48 fn:  391 tp:  1256
+Precision is:  0.963190184049
+Recall is:  0.762598664238
+Accuracy is:  0.958265994866
+
+Coastal_style
+[[7780  334]
+ [ 340 2065]]
+tn:  7780 fp:  334 fn:  340 tp:  2065
+Precision is:  0.860775323051
+Recall is:  0.858627858628
+Accuracy is:  0.9359254682
+
+Southwestern_style too small
+
+ArtDeco_style too small
+
+LouisXVI_style too small
+

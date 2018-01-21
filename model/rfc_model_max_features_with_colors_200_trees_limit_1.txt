@@ -1,0 +1,460 @@
+Mid-Century_style
+[[8381  104]
+ [ 658 1376]]
+tn:  8381 fp:  104 fn:  658 tp:  1376
+Precision is:  0.92972972973
+Recall is:  0.676499508358
+Accuracy is:  0.92755965396
+                scores
+color_brown   0.029709
+color_white   0.026964
+vinyl         0.021736
+color_gray    0.019765
+specs         0.016334
+hemp          0.015177
+color_black   0.012223
+color_yellow  0.012031
+chair         0.011812
+color_teal    0.011205
+planter       0.010770
+manila        0.009926
+leather       0.009872
+color_blue    0.009415
+silk          0.008485
+cor           0.008244
+grass         0.007751
+japanese      0.006722
+color_purple  0.006675
+limited       0.006328
+dining        0.006028
+discontinued  0.005850
+mirror        0.005699
+color_green   0.005476
+m2            0.004948
+
+
+Rustic_style
+[[7774  179]
+ [ 821 1745]]
+tn:  7774 fp:  179 fn:  821 tp:  1745
+Precision is:  0.906964656965
+Recall is:  0.680046765394
+Accuracy is:  0.904933929081
+                scores
+color_brown   0.028973
+color_white   0.026897
+chair         0.025267
+color_gray    0.023364
+color_teal    0.018869
+color_yellow  0.015522
+color_blue    0.015382
+ii            0.013327
+color_black   0.011667
+color_green   0.011023
+specs         0.010855
+set           0.009681
+color_purple  0.008539
+ceramic       0.007140
+wooden        0.006992
+mirror        0.006730
+table         0.006466
+planter       0.005961
+metal         0.005604
+dining        0.004915
+glass         0.004909
+leather       0.004890
+mc            0.004746
+small         0.004555
+iii           0.004530
+
+
+ArtsandCrafts_style
+[[9040   37]
+ [ 392 1050]]
+tn:  9040 fp:  37 fn:  392 tp:  1050
+Precision is:  0.965961361546
+Recall is:  0.728155339806
+Accuracy is:  0.959216655576
+                scores
+color_white   0.039888
+vinyl         0.033901
+color_brown   0.029204
+color_yellow  0.024301
+color_gray    0.020868
+hemp          0.019783
+color_teal    0.016481
+planter       0.015812
+manila        0.015773
+chair         0.015319
+color_blue    0.011637
+color_green   0.011331
+grass         0.010077
+silk          0.008840
+japanese      0.008833
+discontinued  0.008798
+stock         0.008339
+limited       0.007955
+color_purple  0.007301
+color_black   0.007016
+specs         0.006931
+glass         0.006479
+orchids       0.006269
+linen         0.005394
+raffia        0.005353
+
+
+Geometric_style too small
+
+Rococo_style too small
+
+FolkArt_style too small
+
+Regency_style
+[[9863   17]
+ [ 317  322]]
+tn:  9863 fp:  17 fn:  317 tp:  322
+Precision is:  0.949852507375
+Recall is:  0.503912363067
+Accuracy is:  0.968247932313
+                scores
+color_yellow  0.037260
+color_brown   0.033188
+planter       0.031751
+color_gray    0.026334
+color_white   0.025268
+color_teal    0.019004
+color_green   0.017218
+orchids       0.016291
+color_blue    0.013751
+glass         0.012602
+bracket       0.011941
+vase          0.009397
+color_purple  0.008914
+color_black   0.008773
+chair         0.007574
+fern          0.006676
+ceramic       0.006484
+vanda         0.006285
+ball          0.006073
+grass         0.005502
+peonies       0.005439
+hydrangeas    0.004852
+mixed         0.004797
+yellow        0.004732
+finial        0.004597
+
+
+Neoclassical_style too small
+
+Stripe_style too small
+
+Floral_style too small
+
+Country_style too small
+
+Transitional_style
+[[3891  883]
+ [ 295 5450]]
+tn:  3891 fp:  883 fn:  295 tp:  5450
+Precision is:  0.860571609032
+Recall is:  0.94865100087
+Accuracy is:  0.888012168457
+                scores
+color_white   0.036783
+color_brown   0.023477
+specs         0.017949
+color_gray    0.016526
+century       0.015077
+color_yellow  0.012085
+max           0.012046
+chair         0.011870
+leather       0.011058
+color_black   0.009865
+shape         0.009190
+color_teal    0.009020
+time          0.008903
+polyurethane  0.008787
+suitable      0.008670
+comfortable   0.008554
+color_blue    0.008462
+set           0.008004
+structure     0.007460
+12            0.007435
+backrest      0.006543
+steel         0.006460
+commercial    0.006442
+color_purple  0.006404
+ppm           0.006274
+
+
+Solid_style too small
+
+Tribal_style too small
+
+Traditional_style
+[[5170  621]
+ [ 620 4108]]
+tn:  5170 fp:  621 fn:  620 tp:  4108
+Precision is:  0.868682596743
+Recall is:  0.868866328257
+Accuracy is:  0.882023005989
+                scores
+color_white   0.046364
+color_brown   0.037400
+color_gray    0.024492
+color_yellow  0.017066
+chair         0.015227
+color_teal    0.015185
+color_blue    0.013310
+specs         0.012749
+color_black   0.010936
+color_purple  0.008825
+color_green   0.007981
+mirror        0.007827
+ii            0.007760
+dining        0.006889
+strength      0.006625
+comfortable   0.006473
+set           0.005821
+century       0.005614
+seat          0.005486
+lounge        0.005291
+30            0.005247
+upholstered   0.005221
+shape         0.005102
+backrest      0.005011
+table         0.004763
+
+
+Victorian_style too small
+
+ArtNouveau_style too small
+
+HollywoodRegency_style
+[[9804   15]
+ [ 367  333]]
+tn:  9804 fp:  15 fn:  367 tp:  333
+Precision is:  0.956896551724
+Recall is:  0.475714285714
+Accuracy is:  0.963684760909
+                scores
+color_yellow  0.035875
+color_brown   0.031754
+planter       0.031300
+color_gray    0.025658
+color_white   0.025036
+color_teal    0.019290
+color_green   0.016675
+orchids       0.013353
+color_blue    0.013108
+bracket       0.012274
+vase          0.011785
+glass         0.010879
+color_black   0.009888
+color_purple  0.008426
+vanda         0.008027
+ball          0.007353
+chair         0.007133
+fern          0.007015
+hydrangeas    0.006314
+ceramic       0.006178
+peonies       0.005654
+yellow        0.005388
+color_orange  0.005292
+finial        0.004855
+pole          0.004769
+
+
+Baroque_style too small
+
+Woven_style too small
+
+Prints_style too small
+
+Industrial_style
+[[7453  171]
+ [ 541 2354]]
+tn:  7453 fp:  171 fn:  541 tp:  2354
+Precision is:  0.932277227723
+Recall is:  0.813126079447
+Accuracy is:  0.932312957505
+                scores
+chair         0.041443
+color_white   0.034493
+color_brown   0.031187
+color_teal    0.021434
+color_gray    0.020214
+color_yellow  0.019333
+color_blue    0.015834
+color_black   0.015666
+ii            0.014556
+specs         0.013751
+color_green   0.011683
+vinyl         0.011457
+color_purple  0.009623
+hemp          0.007464
+mirror        0.007333
+ceramic       0.006281
+set           0.006264
+manila        0.006073
+lounge        0.005681
+dining        0.005585
+white         0.005537
+metal         0.005487
+sofa          0.005468
+wooden        0.005409
+planter       0.005133
+
+
+Classic_style too small
+
+Abstract_style too small
+
+Modern_style
+[[6593  269]
+ [ 581 3076]]
+tn:  6593 fp:  269 fn:  581 tp:  3076
+Precision is:  0.919581464873
+Recall is:  0.841126606508
+Accuracy is:  0.919193839719
+                scores
+color_white   0.029629
+color_brown   0.026914
+max           0.021236
+color_gray    0.019630
+color_yellow  0.018641
+lead          0.017092
+strength      0.017045
+weight        0.015191
+frame         0.013784
+chair         0.013639
+color_teal    0.013050
+shape         0.011608
+color_black   0.010984
+min           0.010686
+steel         0.010634
+color_blue    0.010507
+wool          0.010365
+commercial    0.010272
+color_green   0.010116
+designed      0.009147
+injecting     0.008879
+color_red     0.008728
+flexibility   0.008550
+ozkaynak      0.008319
+color_purple  0.007970
+
+
+Contemporary_style
+[[1960  926]
+ [ 254 7379]]
+tn:  1960 fp:  926 fn:  254 tp:  7379
+Precision is:  0.88850090307
+Recall is:  0.966723437705
+Accuracy is:  0.887822036315
+                scores
+color_white   0.030031
+color_brown   0.028080
+chair         0.024182
+color_gray    0.019860
+specs         0.018729
+century       0.017502
+color_yellow  0.013964
+leather       0.012521
+color_black   0.010969
+color_teal    0.010168
+color_blue    0.009756
+bradington    0.009025
+young         0.009009
+color_purple  0.007424
+color_green   0.006197
+set           0.005952
+inches        0.005915
+mirror        0.005856
+dining        0.005178
+seat          0.004822
+loveseat      0.004801
+lounge        0.004703
+height        0.004671
+weight        0.004654
+chairs        0.004295
+
+
+Gothic_style too small
+
+Asian_style
+[[8821   43]
+ [ 407 1248]]
+tn:  8821 fp:  43 fn:  407 tp:  1248
+Precision is:  0.966692486445
+Recall is:  0.754078549849
+Accuracy is:  0.957220268086
+                scores
+vinyl         0.027308
+color_white   0.027210
+color_brown   0.024294
+color_gray    0.018236
+hemp          0.017578
+planter       0.015049
+manila        0.014546
+color_yellow  0.014391
+ceramic       0.014362
+chair         0.012210
+white         0.010619
+grass         0.009932
+japanese      0.009238
+color_blue    0.009175
+silk          0.009134
+color_teal    0.008352
+discontinued  0.008098
+stock         0.007644
+mirror        0.007348
+color_black   0.006841
+specs         0.006320
+glass         0.006139
+limited       0.005898
+color_purple  0.005693
+color_green   0.005559
+
+
+Coastal_style
+[[7661  325]
+ [ 349 2184]]
+tn:  7661 fp:  325 fn:  349 tp:  2184
+Precision is:  0.870466321244
+Recall is:  0.862218712989
+Accuracy is:  0.9359254682
+                scores
+color_white   0.085219
+color_brown   0.048628
+chair         0.030995
+color_yellow  0.025123
+color_gray    0.022351
+color_teal    0.017292
+ceramic       0.015426
+vinyl         0.014118
+color_blue    0.013732
+specs         0.013570
+color_green   0.012839
+color_purple  0.009224
+color_black   0.009171
+mirror        0.009164
+hemp          0.008648
+planter       0.008600
+wooden        0.008494
+color_red     0.006838
+manila        0.006711
+white         0.006301
+color_orange  0.005966
+metal         0.005902
+glass         0.005722
+dining        0.005310
+silk          0.004806
+
+
+Southwestern_style too small
+
+ArtDeco_style too small
+
+LouisXVI_style too small
+

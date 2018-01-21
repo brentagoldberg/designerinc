@@ -1,0 +1,23 @@
+Mid-Century_style
+[[6743  223]
+ [ 299 1747]]
+tn:  6743 fp:  223 fn:  299 tp:  1747
+Precision is:  0.886802030457
+Recall is:  0.853861192571
+Accuracy is:  0.94207723036
+
+Rustic_style
+[[5807  145]
+ [ 658 2014]]
+tn:  5807 fp:  145 fn:  658 tp:  2014
+Precision is:  0.932839277443
+Recall is:  0.75374251497
+Accuracy is:  0.906887755102
+
+ArtsandCrafts_style
+[[7183   36]
+ [ 351 1085]]
+tn:  7183 fp:  36 fn:  351 tp:  1085
+Precision is:  0.967885816236
+Recall is:  0.755571030641
+Accuracy is:  0.955285961872

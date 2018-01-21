@@ -1,0 +1,138 @@
+Mid-Century_style
+[[6919   12]
+ [2045   36]]
+tn:  6919 fp:  12 fn:  2045 tp:  36
+Precision is:  0.75
+Recall is:  0.0172993753003
+Accuracy is:  0.771748779405
+
+Rustic_style
+[[5801  202]
+ [2213  408]]
+tn:  5801 fp:  202 fn:  2213 tp:  408
+Precision is:  0.668852459016
+Recall is:  0.155665776421
+Accuracy is:  0.719967532468
+
+ArtsandCrafts_style
+[[7149    7]
+ [1449   50]]
+tn:  7149 fp:  7 fn:  1449 tp:  50
+Precision is:  0.877192982456
+Recall is:  0.0333555703803
+Accuracy is:  0.831773541306
+
+Geometric_style too small
+
+Rococo_style too small
+
+FolkArt_style too small
+
+Regency_style
+[[7890   40]
+ [ 607   60]]
+tn:  7890 fp:  40 fn:  607 tp:  60
+Precision is:  0.6
+Recall is:  0.0899550224888
+Accuracy is:  0.924741188787
+
+Neoclassical_style too small
+
+Stripe_style too small
+
+Floral_style too small
+
+Country_style too small
+
+Transitional_style
+[[1972  976]
+ [ 249 5504]]
+tn:  1972 fp:  976 fn:  249 tp:  5504
+Precision is:  0.849382716049
+Recall is:  0.956718233965
+Accuracy is:  0.859211584875
+
+Solid_style too small
+
+Tribal_style too small
+
+Traditional_style
+[[2555 1950]
+ [ 486 4198]]
+tn:  2555 fp:  1950 fn:  486 tp:  4198
+Precision is:  0.682823682498
+Recall is:  0.896242527754
+Accuracy is:  0.734900424421
+
+Victorian_style too small
+
+ArtNouveau_style too small
+
+HollywoodRegency_style
+[[7899   55]
+ [ 566   77]]
+tn:  7899 fp:  55 fn:  566 tp:  77
+Precision is:  0.583333333333
+Recall is:  0.119751166407
+Accuracy is:  0.927765499593
+
+Baroque_style too small
+
+Woven_style too small
+
+Prints_style too small
+
+Industrial_style
+[[5359  370]
+ [2106  792]]
+tn:  5359 fp:  370 fn:  2106 tp:  792
+Precision is:  0.681583476764
+Recall is:  0.273291925466
+Accuracy is:  0.712994088327
+
+Classic_style too small
+
+Abstract_style too small
+
+Modern_style
+[[4767  301]
+ [1656 1985]]
+tn:  4767 fp:  301 fn:  1656 tp:  1985
+Precision is:  0.86832895888
+Recall is:  0.545179895633
+Accuracy is:  0.775289929958
+
+Contemporary_style
+[[  56 1185]
+ [   9 7642]]
+tn:  56 fp:  1185 fn:  9 tp:  7642
+Precision is:  0.865752803897
+Recall is:  0.998823683179
+Accuracy is:  0.865721997301
+
+Gothic_style too small
+
+Asian_style
+[[6920    0]
+ [1754    0]]
+tn:  6920 fp:  0 fn:  1754 tp:  0
+Precision is:  nan
+Recall is:  0.0
+Accuracy is:  0.797786488356
+
+/home/brent/anaconda2/lib/python2.7/site-packages/ipykernel_launcher.py:175: RuntimeWarning: invalid value encountered in divide
+
+Coastal_style
+[[5230 1109]
+ [ 676 1741]]
+tn:  5230 fp:  1109 fn:  676 tp:  1741
+Precision is:  0.610877192982
+Recall is:  0.720314439388
+Accuracy is:  0.796139789858
+
+Southwestern_style too small
+
+ArtDeco_style too small
+
+LouisXVI_style too small
+
