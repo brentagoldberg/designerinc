@@ -90,7 +90,6 @@ def df_extract_styles(df):
             categories.update(lst)
         except:
             continue
-    print categories
     
     
     for category in list(categories):
@@ -106,6 +105,46 @@ def df_extract_styles(df):
     
     return df
 
+def extract_showroom_ids(df):
+    check = df["showrooms"]
+    col = []
+    for idx,i in enumerate(check):
+        if i in [[],np.nan]:
+            col.append(0)
+        else:
+            lst = []
+            for group in i:
+                lst.append("id_{}".format(group["id"]))
+            col.append(lst)
+    df['showroom_ids'] = col
+
+
+    showrm_ids = set()
+
+    check = df['showroom_ids']
+    c=0
+    for showroom_ids in check:
+        if showroom_ids == 0:
+            c+=1
+            continue
+        else:
+            for i in showroom_ids:
+                showrm_ids.add(i)
+
+    for i in list(showrm_ids):
+        col = []
+        for idx in check:
+            if idx == 0:
+                col.append(0)
+            elif i in idx:
+                col.append(1)
+            else:
+                col.append(0)
+        df[i] = col
+    return df
+
+
+
 def clean_cols(df):
     df['Mid-Century_style'] = df['Mid Century_style'] + df['Mid-Century_style']
     df['c_style'] = df['Coastal _style'] + df['Coastal_style']
@@ -115,7 +154,7 @@ def clean_cols(df):
     df['Transitional_style'] = [min(i,1) for i in df['t_style']]
     df['Coastal_style'] = [min(i,1) for i in df['c_style']]
     df['styles'] = df['_styles']
-    comb = ['Mid Century_style','Coastal _style',"Country_style","_styles","Transitional _style","Coastal _style","c_style","d_style","nan_style"]
+    comb = ['Mid Century_style','Coastal _style',"Country_style","_styles","Transitional _style","Coastal _style","c_style","t_style","nan_style"]
     df.drop(comb,axis=1,inplace=True)
 
     return df
