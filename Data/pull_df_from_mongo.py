@@ -6,8 +6,7 @@ import numpy as np
 
 def make_df():
     cl = pymongo.MongoClient()
-
-    coll = cl.desinc_collection.products_db
+  
     coll2 = cl.desinc_db.products_coll
 
     cursor = coll2.find()
