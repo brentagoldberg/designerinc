@@ -31,3 +31,13 @@ Includes filtering for labeled data and train-test-split for model creation ### 
 ### transform_df.py (aka pipeline)
 
 This file transforms the basic pandas DataFrame download to one the model uses.
+
+## Folders
+
+### model_tuning_data
+
+18 model interation output metrics included
+
+### pkl
+
+*empty* folder. Folder indended for use saving pickles of the models. Each model was 300-600+MB so took up too much storage space to save or use on my local system.
