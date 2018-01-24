@@ -35,6 +35,8 @@ def df_pipeline(df):
     df = df_extract_cols(df,col_name,grab_cols)
     df.drop(col_name,axis=1,inplace=True)    
     
+    df = extract_showroom_ids(df)
+    
     df = category_fix(df)
     
     

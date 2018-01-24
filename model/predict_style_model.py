@@ -6,6 +6,8 @@ from sklearn.metrics import confusion_matrix as coma
 from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import Counter
 from scipy.sparse import hstack
+import scipy
+import matplotlib.pyplot as plt
 
 import sys
 sys.path.append("..")
@@ -40,15 +42,11 @@ use_cols_init = ['color_blue',
  'color_red']
 
 
-for i in list(df.columns):
-    if "id_" in i:
-        use_cols_init.append(i)
 
-use_cols.remove('Solid_style',inplace=True)
 
 class StyleRFC():
     
-    def __init__(self,df,style_cols=style_cols_init,use_cols=use_cols_init,n_estimators=200):
+    def __init__(self,df,style_cols=style_cols_init,use_cols=use_cols_init,n_estimators=100):
         '''
         Initiate the model with the current best model parameters, or input a different DataFrame, sytle list, or features to use.
         
@@ -76,10 +74,11 @@ class StyleRFC():
         self.df = df
         self.n_estimators = n_estimators
         self.model_dict = {}
-        self.model_bar = {}
+        #self.model_bar = {} deprecated
         self.model_features = {}
         self.metrics_dict = {}
-        
+        self.model_predict = {}  ### add to explanation
+        self.columns = []
         pass
     
     def run_rfcs(self):
@@ -93,11 +92,12 @@ class StyleRFC():
         '''
         ##iterating of the list of style types. as of this note, there are 12 to model.
         
-        for style_col in style_cols:
+        for style_col in self.style_cols:
             
             filtered_df = self.filter_df_for_style(style_col,self.df)
             
             self.test_rfc(filtered_df,style_col)
+            self.record_predictions(style_col)
         
         pass
             
@@ -144,7 +144,7 @@ class StyleRFC():
         
         '''
         
-        X,y,labels = df_for_fit(filtered_df,style_col,self.use_cols)
+        X,y,labels = self.df_for_fit(filtered_df,style_col)
         
         X_train, X_test, Y_train, Y_test = tts(X,y)
         
@@ -164,11 +164,12 @@ class StyleRFC():
         '''
         Vectorizing the text using TF-IDF Vectorizer (sklearn). Adding in numerical columns for use. Retaining labels.
         '''
-        vectorizer = TfidfVectorizer(stop_words='english')
-        vector = vectorizer.fit_transform(self.filtered_df['new_text'])
+        vectorizer = TfidfVectorizer(stop_words='english',max_features=1000)
+        vector = vectorizer.fit_transform(filtered_df['new_text'])
         labels = vectorizer.get_feature_names()
         y = list(filtered_df[style_col])
         X = scipy.sparse.hstack((vector,filtered_df[self.use_cols].to_sparse()))
+        
         return X,y,labels
     
     def con_matrix(self,X_test,Y_test,style_col):
@@ -203,8 +204,9 @@ class StyleRFC():
         graph_it does two things: Saves most important features to a dictionary for each model, and saves a plot
         '''
         x_labels = list(labels)
-        for i in use_cols:
+        for i in self.use_cols:
             x_labels.append(i)
+        self.columns = list(x_labels)
         
         n_features = 25
         features_df = pd.DataFrame(model.feature_importances_,index=x_labels).nlargest(n_features,0)
@@ -213,15 +215,38 @@ class StyleRFC():
         #### Needs to be cleaned up
         scores = features_df['scores']
         chart_label = list(features_df.index)
+        
         num_cols = range(1,n_features+1)
         plt.bar(num_cols,list(scores),align='center')
         plt.xticks(num_cols,chart_label,rotation='vertical')
-        self.model_bar_graph[style_col] = plt.show()
+        plt.show()
         
         pass
+    
+    def record_predictions(self,style_col):
+        filtered_df,y,labels = self.df_for_fit(self.df,style_col)
+#        x_labels = list(labels)
+#        for i in self.use_cols:
+#            x_labels.append(i)
+#        filtered_df = pd.DataFrame(filtered_df)
+#        filtered_df.columns = x_labels
+#        for col in list(filtered_df.columns):
+#            if col not in self.columns:
+#                filtered_df[col] = 0
+#        
+#        filtered_df = filtered_df[self.columns]
+        print "filtered"
+        self.model_predict[style_col] = self.model_dict[style_col].predict_proba(filtered_df)
+        print "saved" ###check for sorted issue
         
 if __name__ == "__main__":
     df = ld.main()
+    
+    for i in list(df.columns):
+        if "id_" in i:
+            use_cols_init.append(i)
+
+    use_cols_init.remove('Solid_style')
     
     style_models = StyleRFC(df)
     
