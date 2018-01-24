@@ -1,4 +1,4 @@
-# Designer Inc Recommender System
+# Designer Inc Furniture Style Classification System
 
 Designer Inc (designerinc.com) is an interior designer marketplace and services company. It is a trade-only sourcing and purchasing site listing hundreds of thousands of furniture and other interior design pieces. "Trade-only" refers to the special relationship between professional designers and manufacturers.
 
