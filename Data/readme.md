@@ -1,5 +1,5 @@
 # Data
-This folder contains the data gathering scripts I used ... except the web scraper. My client requested that the scraping access to their database remain classified.
+This folder contains the data gathering scripts I used. My client requested that the scraping access to their database remain classified.
 
 The databases are to remain classified as well so will not be posted to github.
 
@@ -13,3 +13,6 @@ Accesses the scraped MongoDB stored on my system and transforms it to a better f
 
 ### pull_from_mongo.py
 Access the MongoDB stored on my system and transforms it to a pandas DataFrame
+
+### Scraping_hits notebook
+Code to scrape information from algolia database
