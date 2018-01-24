@@ -45,6 +45,12 @@ use_cols_init = ['color_blue',
 
 
 class StyleRFC():
+    '''
+    This class object creates and random forest classifier models for each of the styles inputted, as well as the features inputted.
+    
+    '''
+
+    
     
     def __init__(self,df,style_cols=style_cols_init,use_cols=use_cols_init,n_estimators=100):
         '''
@@ -163,6 +169,16 @@ class StyleRFC():
     def df_for_fit(self,filtered_df,style_col):
         '''
         Vectorizing the text using TF-IDF Vectorizer (sklearn). Adding in numerical columns for use. Retaining labels.
+        
+        INPUT:
+        filtered_df: pandas DataFrame limited to a subset of labeled items
+        style_col: string. Style name of column and used as tag for saving information
+        
+        OUTPUT:
+        X: numpy sparse array with all data to be used for the model pre train-test split
+        Y: list of target values (0 or 1)
+        labels: list of column titles from the vectorizer
+        
         '''
         vectorizer = TfidfVectorizer(stop_words='english',max_features=1000)
         vector = vectorizer.fit_transform(filtered_df['new_text'])
@@ -176,7 +192,23 @@ class StyleRFC():
         '''
         Producing a Confusion Matrix, with associated metrics, for future analysis. Saving to metrics_dict for analysis
         
+        INPUT:
+        X_test: sparse numpy array with held-out data to use for prediction
+        Y_test: list with actual target data to compare the predict against.
+        style_col: string. Style name of column and used as tag for saving information
+        
+        OUTPUT:
+        None
+        
+        SAVED:
+        metrics_dict: "conmatrix":conmatrix,"tn":tn,"fp":fp,"fn":fn,"precision":precision,"recall":recall,"accuracy":accuracy
+        for the current model labeled as style
+        
+        PRINTED:
+        metrics print on the screen as models are being built to ensure the process is running correctly
+        
         '''
+        
         y_predict = self.model_dict[style_col].predict(X_test)
         
         conmatrix = coma(Y_test,y_predict)
@@ -202,7 +234,22 @@ class StyleRFC():
     def graph_it(self,model,labels,style_col):
         '''
         graph_it does two things: Saves most important features to a dictionary for each model, and saves a plot
+        
+        INPUT:
+        model:
+        labels:
+        style_col:
+        
+        OUTPUT:
+        none
+        
+        SAVED:
+        model_features_df[style_col]: saves the top 25 features and their scores for future review and analysis
+        
+        PRINTED:
+        plot of top 25 feature importances
         '''
+        
         x_labels = list(labels)
         for i in self.use_cols:
             x_labels.append(i)
@@ -224,6 +271,10 @@ class StyleRFC():
         pass
     
     def record_predictions(self,style_col):
+        '''
+        NOT YET IMPLEMENTED
+        '''
+        
         filtered_df,y,labels = self.df_for_fit(self.df,style_col)
 #        x_labels = list(labels)
 #        for i in self.use_cols:
